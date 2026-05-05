@@ -69,7 +69,7 @@ def create_news_embed(entry):
         url=entry.link,
         color=0x1abc9c
     )
-    embed.timestamp = datetime.now(datetime.UTC)
+    embed.timestamp = datetime.utcnow()
     return embed
 
 # ----------------------------
