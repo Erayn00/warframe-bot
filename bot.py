@@ -7,6 +7,9 @@ from datetime import datetime
 import os
 TOKEN = os.getenv("MTUwMDk3OTE2MzMwNDI5NjYyMA.GW14Nr.rbdevimCMUQ5VCkfSY61hRi8E7mM7fi6SqwnK8")
 
+if TOKEN is None:
+    raise Exception("TOKEN mancante nelle Environment Variables")
+
 # ----------------------------
 # CANALI SEPARATI
 # ----------------------------
